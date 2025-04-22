@@ -37,7 +37,7 @@ public class TestNG {
     public void homePage(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
         WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(100));
-        WebElement element = wait.until(ExpectedConditions.visibilityOf(dr))
+       // WebElement element = wait.until(ExpectedConditions.visibilityOf(dr))
         String actualTitle = driver.getTitle();
         String expectedTitle="Automation Exercise";
         Assert.assertEquals(actualTitle  , expectedTitle , "home page is not visible");
@@ -59,15 +59,15 @@ public class TestNG {
         login = new Login(driver);
         login.EnterName(username);
         login.enterEmail(email);
-        /*login.click();
+        login.click();
         //driver.findElement(By.name("name")).sendKeys("lamis");
 
         //driver.findElement(By.xpath("//div[@class='signup-form']//input[@name='email']")).sendKeys("laallaa@gmail.com");
         //driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button")).click();
         WebElement accountInfo = driver.findElement(By.xpath("/html/body/section/div/div/div/div[1]/h2/b"));
-        Assert.assertTrue(accountInfo.isDisplayed() ,"account info is not displayed");*/
+        Assert.assertTrue(accountInfo.isDisplayed() ,"account info is not displayed");
     }
-    /*@Test(priority = 4)
+    @Test(priority = 4)
     public void verifyAccountCreation(){
         driver.findElement(By.id("id_gender2")).click();
         driver.findElement(By.id("password")).sendKeys("12345678");
@@ -116,11 +116,8 @@ public class TestNG {
     public void close() {
         driver.close();
 
-    }*/
-
-    public void insert(){
-
     }
+
 
 
 }
