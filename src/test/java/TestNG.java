@@ -28,7 +28,7 @@ public class TestNG {
     //*[@id="cartModal"]/div/div/div[2]/p[2]/a/u
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "E:\\Atos\\automation\\firstselenium\\drivers\\chromedriver-win64\\chromedriver.exe   ");
+        System.setProperty("webdriver.chrome.driver", "E:\\Amit\\chromedriver-win64\\chromedriver.exe   ");
         driver=new ChromeDriver();
 //        driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com/");
